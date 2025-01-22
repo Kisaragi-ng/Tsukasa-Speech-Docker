@@ -78,8 +78,7 @@ theme = gr.themes.Base(
 
 from Modules.diffusion.sampler import DiffusionSampler, ADPM2Sampler, KarrasSchedule
 
-voicelist = [v for v in os.listdir("/home/ubuntu/Kanade_Project/gradio/Tsukasa_Speech/reference_sample_wavs")]
-
+voicelist = [v for v in os.listdir("/app/reference_sample_wavs")]
 
 
 for v in voicelist:
