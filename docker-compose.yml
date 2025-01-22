@@ -9,9 +9,11 @@ services:
     ports:
       - "7860:7860"
     volumes:
-      - ./data:/root/nltk_data
-      - ./app_tsuka.py:/app/app_tsuka.py
+      - tsukasa_data:/root/nltk_data
     environment:
       - GRADIO_SERVER_NAME=0.0.0.0
       - GRADIO_SERVER_PORT=7860
     restart: unless-stopped
+
+volumes:
+  tsukasa_data:
